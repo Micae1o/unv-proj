@@ -1,0 +1,109 @@
+.time-tracking-row {
+  height: 60px !important;
+}
+
+.time-cell {
+  /* padding: 0 !important; */
+  cursor: pointer;
+}
+
+.weekend-cell {
+  background-color: #f5f5f5;
+}
+
+.weekend-day-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #999;
+  font-size: 16px;
+}
+
+.time-cell-clickable {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 0;
+  transition: background-color 0.2s;
+}
+
+.time-cell-clickable:hover {
+  background-color: #e6f7ff;
+}
+
+.time-cell-clickable.read-only {
+  cursor: default;
+}
+
+.time-cell-clickable.read-only:hover {
+  background-color: transparent;
+}
+
+.display-mode .time-cell {
+  cursor: default;
+}
+
+.edit-mode .time-cell {
+  cursor: pointer;
+}
+
+.time-input-editing {
+  width: 100% !important;
+  height: 100% !important;
+  font-size: 16px !important;
+  text-align: center !important;
+  border: 2px solid #1890ff !important;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2) !important;
+}
+
+.time-input-editing input {
+  text-align: center !important;
+  height: 100% !important;
+  padding: 12px 4px !important;
+  font-size: 16px !important;
+}
+
+.time-input-editing .ant-input-number-handler-wrap {
+  display: none;
+}
+
+.time-tracking-table th {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.time-tracking-table td {
+  text-align: center;
+}
+
+.terminated-day-cell {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  color: #d9d9d9;
+  padding: 8px;
+  text-align: center;
+}
+
+.future-date-cell {
+  background-color: #fafafa;
+  cursor: not-allowed;
+  color: #d9d9d9;
+  padding: 8px;
+  text-align: center;
+  border-left: 3px solid #f0f0f0;
+}
+
+.before-employment-cell {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+  color: #d9d9d9;
+  padding: 8px;
+  text-align: center;
+  border-left: 3px solid #e0e0e0;
+}
